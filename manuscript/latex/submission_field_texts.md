@@ -8,7 +8,7 @@ The raw data analyzed in this study are publicly available from CDC/NCHS NSFG pu
 
 ## Code Availability
 
-Analysis scripts, split definitions, source-data tables, model metadata, and figure assets are included in the submitted reproducibility package. Raw NSFG individual-level public-use records are not redistributed; the scripts point to CDC/NCHS public-use data portals and document the processing workflow. Project code is released under the MIT License, and citation metadata are provided in CITATION.cff. If a public GitHub or Zenodo archive is created during review or before publication, the Code availability statement will be updated with the versioned URL or DOI.
+Analysis scripts, split definitions, source-data tables, model metadata, and figure assets are available in the public GitHub repository https://github.com/Luciky-Leo/nsfg-reproductive-lifecourse-ssl and the archived Zenodo release https://doi.org/10.5281/zenodo.20692052. Raw NSFG individual-level public-use records are not redistributed; the scripts point to CDC/NCHS public-use data portals and document the processing workflow. Project code is released under the MIT License, and citation metadata are provided in CITATION.cff. The repository includes the feature-audit files needed to identify primary encoder inputs, candidate retained variables, excluded sparse variables, and endpoint-direct exclusion rules.
 
 ## Ethics Approval And Consent To Participate
 

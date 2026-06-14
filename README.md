@@ -1,35 +1,62 @@
-﻿# NSFG Reproductive Life-Course SSL
+# NSFG Reproductive Life-Course SSL
 
-Reproducibility materials for the manuscript:
+Created: 2026-06-01
 
-**Reproductive life-course phenotyping in the National Survey of Family Growth: a self-supervised temporal survey study**
+Working title: **Reproductive life-course phenotyping in the National Survey of
+Family Growth: a self-supervised temporal public-use survey study.**
 
-This repository contains analysis scripts, manuscript source files, final figures, source-data tables, model/configuration metadata, and reproducibility notes for the NSFG reproductive life-course self-supervised phenotyping study.
+Target journal: **Reproductive Health**.
 
-## Data availability
+Public code archive: https://github.com/Luciky-Leo/nsfg-reproductive-lifecourse-ssl
 
-The raw NSFG public-use files are available from CDC/NCHS public-use data portals. Raw individual-level public-use records are not redistributed in this repository. Scripts and documentation point to the official data portals and describe the processing workflow. Derived source-data tables used for manuscript figures and tables are included for transparency.
+Zenodo DOI: https://doi.org/10.5281/zenodo.20692052
 
-## Reproducibility contents
+This project is the rapid second-paper route after the birth-registry SSL
+submission. It uses public NSFG female respondent and pregnancy files to build a
+respondent-level reproductive life-course matrix, learn masked tabular SSL
+representations, discover interpretable phenotypes, and evaluate reproductive
+health risk enrichment.
 
-- `scripts/`: data parsing, harmonization, endpoint definition, SSL phenotyping, robustness analyses, figure/table generation, and submission QA scripts.
-- `manuscript/latex/`: Springer Nature LaTeX source, main manuscript PDF, supplementary information PDF, tables, figures, and source-data tables.
-- `results/tables/`: analysis output tables used to populate figures, tables, and supplementary materials.
-- `results/figures/`: exported figure assets.
-- `environment.yml`: conda/micromamba environment specification used for the analysis.
-- `LICENSE`: MIT license.
-- `CITATION.cff`: citation metadata.
+Default environment: `research-py312`.
 
-## Runtime
+Start here:
 
-The project was run under WSL Ubuntu with micromamba environment `research-py312`.
+1. Read `PROJECT_ENV.md`.
+2. Read `docs/project_strategy.md`.
+3. Download/refresh data with `scripts/download_nsfg_2022_2023.sh`.
+4. Run the smoke test with `scripts/smoke_nsfg_2022_2023.py`.
 
-Example environment command used on the analysis workstation:
+Environment check:
 
 ```powershell
-wsl.exe -d Ubuntu -- bash -lc "cd /mnt/e/Reserch/NSFG_Reproductive_LifeCourse_SSL_20260601 && /mnt/e/WSL/micromamba/bin/micromamba run -n research-py312 python scripts/qa_submission_package.py"
+wsl.exe -d Ubuntu -- bash -lc "cd /mnt/e/Reserch/NSFG_Reproductive_LifeCourse_SSL_20260601 && bash scripts/check_env.sh"
 ```
 
-## Raw data policy
+Smoke test:
 
-Do not add `data/raw/`, `data/processed/`, `data/interim/`, or other individual-level NSFG files to this repository. These folders are intentionally excluded from public release.
+```powershell
+wsl.exe -d Ubuntu -- bash -lc "cd /mnt/e/Reserch/NSFG_Reproductive_LifeCourse_SSL_20260601 && /mnt/e/WSL/micromamba/bin/micromamba run -n research-py312 python scripts/smoke_nsfg_2022_2023.py"
+```
+
+Full analysis and manuscript package:
+
+```powershell
+wsl.exe -d Ubuntu -- bash -lc "cd /mnt/e/Reserch/NSFG_Reproductive_LifeCourse_SSL_20260601 && bash scripts/run_analysis.sh"
+wsl.exe -d Ubuntu -- bash -lc "cd /mnt/e/Reserch/NSFG_Reproductive_LifeCourse_SSL_20260601 && /mnt/e/WSL/micromamba/bin/micromamba run -n research-py312 python scripts/build_latex_submission_package.py"
+wsl.exe -d Ubuntu -- bash -lc "cd /mnt/e/Reserch/NSFG_Reproductive_LifeCourse_SSL_20260601 && /mnt/e/WSL/micromamba/bin/micromamba run -n research-py312 python scripts/qa_submission_package.py"
+wsl.exe -d Ubuntu -- bash -lc "cd /mnt/e/Reserch/NSFG_Reproductive_LifeCourse_SSL_20260601 && /mnt/e/WSL/micromamba/bin/micromamba run -n research-py312 python scripts/export_overleaf_package.py --allow-warnings"
+```
+
+Current status:
+
+- 2011-2019 and 2022-2023 female respondent/pregnancy public-use files have been parsed and harmonized.
+- Target journal has been set to `Reproductive Health`; title, cover letter, and project handoff now emphasize reproductive-health phenotyping and endpoint enrichment rather than an AI-model-first claim.
+- The current analysis is positioned as public-use NSFG representation learning, phenotype discovery, and endpoint enrichment; it is not a clinical diagnostic, causal, EHR, registry-validation, or foundation-model claim.
+- The primary Table 4 now reports pregnancy-history endpoint enrichment in the ever-pregnant stratum, with full-cohort estimates retained as supporting exposure-structured summaries.
+- The LaTeX package under `manuscript/latex` is regenerated by `scripts/build_latex_submission_package.py` and uses current PDF figure assets.
+- Source-data tables for manuscript figures and tables are copied to `manuscript/latex/source_data`.
+- Submission field text is in `manuscript/latex/submission_field_texts.md`.
+- Current handoff and post-review notes are in `docs/final_submission_handoff.md` and `analysis_review/claude_review_response_20260609.md`.
+- Before upload, rerun the build, LaTeX compile, consistency audit, QA, and Overleaf export commands shown above.
+- Raw individual-level NSFG public-use files are not redistributed; code points to CDC/NCHS public-use portals.
+- Project code is MIT-licensed and archived at GitHub/Zenodo with DOI `10.5281/zenodo.20692052`; the submitted reproducibility package includes scripts, split definitions, source-data tables, model metadata, figure assets, feature-audit files, `LICENSE`, and `CITATION.cff`.
