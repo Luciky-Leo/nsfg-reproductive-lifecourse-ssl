@@ -1,0 +1,7 @@
+domain_or_endpoint,definition,n_features,leakage_control
+Primary SSL input features,Endpoint-direct variables excluded; top nonconstant features selected by train-set completeness and variance.,48,Direct endpoint regex excluded before encoder fitting.
+contraceptive_vulnerability,"CONSTAT1 code 42; denominator is the NSFG analytic female respondent population, interpreted as a current vulnerability proxy rather than an incident pregnancy outcome",Endpoint,constat|currmeth|meth
+fertility_service_or_loss_help,"HLPPRG code 1 or HLPMC code 1, indicating ever receiving medical help to become pregnant or to prevent miscarriage",Endpoint,hlpprg|hlpmc|infert|fecund|infever|anyprghp|anymschp|ovul|insem|invitro|tubes|advice|endomet|fibroid
+unintended_mistimed_pregnancy_history,"Among respondents with pregnancy records, any NEWWANTR code 3/4/6, WANTRESP code 3/5, WANTPART code 3/5, TIMINGOK code 3, or WANTBOLD code 5",Endpoint,preg_newwantr|preg_wantresp|preg_wantpart|preg_timingok|preg_wantbold
+adverse_pregnancy_history_proxy,"Among respondents with pregnancy records, any public-use low-birthweight live birth indicator (LBW1 code 1) or stillbirth outcome (OUTCOME code 3)",Endpoint,preg_lbw|preg_outcome|birthwgt|gest
+impaired_fecundity_status,"FECUND code 2-5 or INFERT code 1-2, using public-use NSFG fecundity or infertility recodes and excluding FECUND code 1 contraceptive sterilization",Endpoint,fecund|infert|hlpprg|hlpmc|infever|anyprghp|anymschp

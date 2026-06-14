@@ -1,0 +1,6 @@
+output,purpose
+supplementary_age_range_endpoint_enrichment.csv,Compares 2022-2023 phenotype endpoint enrichment in 15-44 versus 15-49 respondents.
+supplementary_adjusted_endpoint_enrichment.csv,"Survey-weighted, cluster-bootstrap logistic enrichment models adjusted for age, race/ethnicity, education, poverty, insurance, and parity."
+supplementary_baseline_phenotype_method_comparison.csv,"Compares SSL phenotypes against raw PCA, MCA-style SVD, and selected-variable Bernoulli LCA baselines."
+supplementary_leakage_sensitivity.csv,Compares primary endpoint-excluded encoder enrichment against full-domain encoder sensitivity.
+supplementary_subgroup_endpoint_enrichment.csv,"Checks phenotype endpoint enrichment across age, race/ethnicity, poverty, insurance, and parity strata."

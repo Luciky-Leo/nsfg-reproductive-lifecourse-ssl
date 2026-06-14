@@ -1,0 +1,16 @@
+.venv/
+.r-lib/
+.codex_Rlib/
+renv/library/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.Rhistory
+.RData
+*.pyc
+*.log
+data/raw/
+data/interim/
+data/processed/
+data/tmp/
+results/tmp/

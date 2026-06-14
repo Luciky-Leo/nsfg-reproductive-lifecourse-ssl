@@ -1,0 +1,7 @@
+metric,value
+pregnancy_records,8247.0
+respondents_with_pregnancy_records,3076.0
+pregnancy_caseids_present_in_respondent_file,3076.0
+pregnancy_caseids_missing_from_respondent_file,0.0
+median_pregnancy_records_per_pregnant_respondent,2.0
+max_pregnancy_records_per_respondent,16.0

@@ -1,0 +1,15 @@
+\begin{table}[H]
+\centering
+\caption{SSL encoder initialization sensitivity. The primary development-selected k=3 solution was held fixed and a complete 30-epoch alternative initialization was compared with the primary seed. This analysis tests whether the learned representation and transferred phenotype assignment are sensitive to encoder initialization; it is not a repeated full model-selection study.}
+\label{tab:seed_sensitivity}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}rrrrrrrr@{}}
+\toprule
+Seed & Epochs & k & Masked MSE & Silhouette & DBI & Test ARI & Adverse PR \\
+\midrule
+20,260,602 & 30 & 3 & 0.917 & 0.615 & 0.70 & 1.00 & 2.16 \\
+20,260,612 & 30 & 3 & 0.724 & 0.453 & 0.94 & 0.43 & 1.68 \\
+\bottomrule
+\end{tabular*}
+\end{table}

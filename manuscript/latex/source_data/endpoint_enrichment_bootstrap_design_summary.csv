@@ -1,0 +1,2 @@
+cycle,analysis_rows,strata_variable,cluster_variable,weight_variable,n_strata,n_strata_cluster_pairs,bootstrap_replicates,bootstrap_seed,bootstrap_method
+2022_2023,4893,VEST,VECL,WGT2022_2023,20,80,2000,20260604,stratified cluster percentile bootstrap using VEST/VECL with public-use weights retained

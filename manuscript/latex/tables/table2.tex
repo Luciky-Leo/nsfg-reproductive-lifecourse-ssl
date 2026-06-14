@@ -1,0 +1,19 @@
+\begin{table}[tbp]
+\centering
+\caption{Input feature set and validation endpoint definitions. Direct endpoint-defining variables were excluded from the primary encoder input before SSL fitting. The fecundity-limitation endpoint excludes contraceptive sterilization from the FECUND recode.}
+\label{tab:endpoints}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.20\textwidth}>{\raggedright\arraybackslash}p{0.42\textwidth}c>{\raggedright\arraybackslash}p{0.22\textwidth}@{}}
+\toprule
+Domain or endpoint & Operational definition & Role & Leakage-control rule \\
+\midrule
+Primary SSL input features & Endpoint-direct variables excluded; top nonconstant features selected by train-set completeness and variance. & 48 & Direct endpoint regex excluded before encoder fitting. \\
+Contraceptive vulnerability & CONSTAT1 code 42; denominator is the NSFG analytic female respondent population, interpreted as a current vulnerability proxy rather than an incident pregnancy outcome & Endpt. & Direct endpoint-variable regex excluded; full regex retained in source-data table. \\
+Fertility or loss help & HLPPRG code 1 or HLPMC code 1, indicating ever receiving medical help to become pregnant or to prevent miscarriage & Endpt. & Direct endpoint-variable regex excluded; full regex retained in source-data table. \\
+Mistimed or unwanted pregnancy history & Among respondents with pregnancy records, any NEWWANTR code 3/4/6, WANTRESP code 3/5, WANTPART code 3/5, TIMINGOK code 3, or WANTBOLD code 5 & Endpt. & Direct endpoint-variable regex excluded; full regex retained in source-data table. \\
+Adverse pregnancy-history proxy & Among respondents with pregnancy records, any public-use low-birthweight live birth indicator (LBW1 code 1) or stillbirth outcome (OUTCOME code 3) & Endpt. & Direct endpoint-variable regex excluded; full regex retained in source-data table. \\
+Fecundity limitation or infertility & FECUND code 2-5 or INFERT code 1-2, using public-use NSFG fecundity or infertility recodes and excluding FECUND code 1 contraceptive sterilization & Endpt. & Direct endpoint-variable regex excluded; full regex retained in source-data table. \\
+\bottomrule
+\end{tabular*}
+\end{table}

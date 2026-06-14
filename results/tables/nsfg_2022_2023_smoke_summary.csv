@@ -1,0 +1,3 @@
+table,path,rows,columns,unique_caseid
+female_respondent,data/raw/nsfg_2022_2023/NSFG_2022_2023_FemRespPUFData.csv,5586,1912,5586
+female_pregnancy,data/raw/nsfg_2022_2023/NSFG_2022_2023_FemPregPUFData.csv,8247,111,3076

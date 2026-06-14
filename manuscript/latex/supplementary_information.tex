@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{float}
+\raggedbottom
+\emergencystretch=2em
+\renewcommand{\tablename}{Supplementary Table}
+\renewcommand{\figurename}{Supplementary Figure}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\theHtable}{S\arabic{table}}
+\renewcommand{\theHfigure}{S\arabic{figure}}
+
+\begin{document}
+
+\begin{center}
+{\Large\bfseries Supplementary information}\\[0.75em]
+{\large Reproductive life-course phenotyping in the National Survey of Family Growth: a self-supervised temporal survey study}\\[0.75em]
+Feifan Lu, Fengshang Yan, Qianqian Yang, Jiuqiong Yan, Rui Guan
+\end{center}
+
+\section*{Supplementary tables}
+
+Supplementary Table S1 through Supplementary Table S11 provide numerical source summaries for cluster selection, endpoint enrichment intervals, age-range sensitivity, covariate adjustment, baseline methods, leakage sensitivity, subgroup robustness, the ever-pregnant stratum, simple age/parity baselines, raw-feature versus SSL supervised comparisons, and encoder seed sensitivity.
+
+\input{tables/tableS1_cluster_selection.tex}
+
+\input{tables/tableS2_endpoint_enrichment_ci.tex}
+
+\input{tables/tableS3_age_sensitivity.tex}
+
+\input{tables/tableS4_adjusted_enrichment.tex}
+
+\input{tables/tableS5_baseline_methods.tex}
+
+\input{tables/tableS6_leakage_sensitivity.tex}
+
+\input{tables/tableS7_subgroup_robustness.tex}
+
+\input{tables/tableS8_ever_pregnant.tex}
+
+\input{tables/tableS9_trivial_baseline.tex}
+
+\input{tables/tableS10_raw_feature_supervised.tex}
+
+\input{tables/tableS11_seed_sensitivity.tex}
+
+\clearpage
+
+\section*{Supplementary figures}
+
+Supplementary Figures S1--S3 provide robustness, method-sensitivity, and subgroup displays; Supplementary Figures S4 and S5 provide the secondary supervised validation and SSL diagnostic displays.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/supplementary_robustness_age_adjusted.pdf}
+\caption{Robustness analysis for age-range sensitivity and covariate-adjusted endpoint enrichment. (A) Highest-phenotype prevalence ratios in 2022--2023 ages 15--44 versus 15--49 years. (B) Survey-weighted adjusted odds ratios from one-vs-rest phenotype enrichment models.}
+\label{fig:supp_age_adjusted}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/supplementary_method_leakage_sensitivity.pdf}
+\caption{Baseline-method and leakage-sensitivity analyses. (A) SSL phenotyping compared with raw PCA, MCA-style one-hot SVD, and selected-variable Bernoulli LCA baselines. (B) Maximum endpoint prevalence ratios for the primary endpoint-excluded encoder and a full-domain sensitivity encoder.}
+\label{fig:supp_method_leakage}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/supplementary_subgroup_robustness.pdf}
+\caption{Subgroup robustness summary across age, race/ethnicity, poverty, insurance, and parity strata. Values summarize mean maximum endpoint prevalence ratios by subgroup; subgroup categories use public-use recodes, and full decoded endpoint-by-phenotype estimates are included in source data and Supplementary Table S7.}
+\label{fig:supp_subgroup}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/FIG9.png}
+\caption{Secondary supervised validation diagnostics. (A) AUROC validation matrix for phenotype-only, SSL-embedding, and SSL-plus-phenotype summaries across validation endpoints. AUROC is reported as a secondary discrimination summary and is not the primary claim. (B) Feature-set AUPRC comparison for phenotype-only, SSL-embedding, and SSL-plus-phenotype summaries. These diagnostics support representation and enrichment assessment rather than diagnostic prediction.}
+\label{fig:model_diagnostics}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/FIG10.png}
+\caption{SSL optimization and feature-missingness diagnostics. (A) Masked reconstruction loss across SSL training epochs, with rapid-descent, adjustment, and convergence phases, smoothed trend, and minimum-loss epoch annotation. (B) Distribution of training-cycle missingness among primary encoder features and retained candidate SSL features.}
+\label{fig:ssl_diagnostics}
+\end{figure}
+
+\end{document}

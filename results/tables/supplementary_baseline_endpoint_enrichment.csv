@@ -1,0 +1,61 @@
+analysis,endpoint,phenotype,n,events,weighted_prevalence,baseline_weighted_prevalence,prevalence_ratio,risk_difference,method
+SSL embedding + k-means,contraceptive_vulnerability,0,2427,146,0.05642644358820258,0.07810607985777983,0.7224334352837473,-0.02167963626957725,SSL embedding + k-means
+SSL embedding + k-means,contraceptive_vulnerability,1,2224,238,0.1038013269058726,0.07810607985777983,1.3289788335924706,0.02569524704809277,SSL embedding + k-means
+SSL embedding + k-means,contraceptive_vulnerability,2,242,21,0.07601500934349482,0.07810607985777983,0.9732278137874472,-0.002091070514285004,SSL embedding + k-means
+SSL embedding + k-means,fertility_service_or_loss_help,0,2427,114,0.04312198472329802,0.11100773395980593,0.3884592828362011,-0.0678857492365079,SSL embedding + k-means
+SSL embedding + k-means,fertility_service_or_loss_help,1,2224,397,0.18240484109956792,0.11100773395980593,1.6431723682028652,0.071397107139762,SSL embedding + k-means
+SSL embedding + k-means,fertility_service_or_loss_help,2,242,44,0.18555656033171047,0.11100773395980593,1.6715642569453535,0.07454882637190455,SSL embedding + k-means
+SSL embedding + k-means,unintended_mistimed_pregnancy_history,0,2427,51,0.023098948099806595,0.3420909272258648,0.06752283168432456,-0.3189919791260582,SSL embedding + k-means
+SSL embedding + k-means,unintended_mistimed_pregnancy_history,1,2224,1506,0.669593266728918,0.3420909272258648,1.9573546488323568,0.32750233950305313,SSL embedding + k-means
+SSL embedding + k-means,unintended_mistimed_pregnancy_history,2,242,181,0.7638836000050179,0.3420909272258648,2.2329840963617995,0.42179267277915306,SSL embedding + k-means
+SSL embedding + k-means,adverse_pregnancy_history_proxy,0,2427,7,0.005015724565161978,0.05375458533071529,0.09330784591311879,-0.04873886076555331,SSL embedding + k-means
+SSL embedding + k-means,adverse_pregnancy_history_proxy,1,2224,219,0.09221760584599589,0.05375458533071529,1.7155300385752001,0.0384630205152806,SSL embedding + k-means
+SSL embedding + k-means,adverse_pregnancy_history_proxy,2,242,48,0.22178735134672328,0.05375458533071529,4.125924327798588,0.168032766016008,SSL embedding + k-means
+SSL embedding + k-means,impaired_fecundity_status,0,2427,466,0.17848133407804492,0.2813104299924621,0.6344639766212276,-0.10282909591441716,SSL embedding + k-means
+SSL embedding + k-means,impaired_fecundity_status,1,2224,807,0.38766369409840573,0.2813104299924621,1.3780637074451647,0.10635326410594365,SSL embedding + k-means
+SSL embedding + k-means,impaired_fecundity_status,2,242,94,0.4102911449461803,0.2813104299924621,1.4584995833861345,0.1289807149537182,SSL embedding + k-means
+Raw matrix PCA + k-means,contraceptive_vulnerability,0,2371,138,0.05565315889628699,0.07810607985777983,0.7125329935598298,-0.022452920961492838,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,contraceptive_vulnerability,1,2515,266,0.10070403108093959,0.07810607985777983,1.2893238434742524,0.02259795122315976,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,contraceptive_vulnerability,2,7,1,0.06145517861326523,0.07810607985777983,0.7868168358361661,-0.0166509012445146,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,fertility_service_or_loss_help,0,2371,106,0.04096605686559252,0.11100773395980593,0.36903786253690807,-0.07004167709421341,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,fertility_service_or_loss_help,1,2515,446,0.18053843108369305,0.11100773395980593,1.6263590350296047,0.06953069712388713,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,fertility_service_or_loss_help,2,7,3,0.5075029632963135,0.11100773395980593,4.571780228214297,0.3964952293365076,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,unintended_mistimed_pregnancy_history,0,2371,7,0.0038968797545550723,0.3420909272258648,0.01139135663771102,-0.33819404747130977,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,unintended_mistimed_pregnancy_history,1,2515,1727,0.6814075069351343,0.3420909272258648,1.9918900289490473,0.3393165797092695,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,unintended_mistimed_pregnancy_history,2,7,4,0.5856063055373161,0.3420909272258648,1.7118440126027392,0.24351537831145126,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,adverse_pregnancy_history_proxy,0,2371,0,0.0,0.05375458533071529,0.0,-0.05375458533071529,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,adverse_pregnancy_history_proxy,1,2515,274,0.10788622983617759,0.05375458533071529,2.0070144560213277,0.0541316445054623,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,adverse_pregnancy_history_proxy,2,7,0,0.0,0.05375458533071529,0.0,-0.05375458533071529,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,impaired_fecundity_status,0,2371,445,0.17365362237512422,0.2813104299924621,0.6173024668149609,-0.10765680761733787,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,impaired_fecundity_status,1,2515,920,0.3897379478174584,0.2813104299924621,1.3854372474845733,0.10842751782499632,Raw matrix PCA + k-means
+Raw matrix PCA + k-means,impaired_fecundity_status,2,7,2,0.16641259072944833,0.2813104299924621,0.5915621071494132,-0.11489783926301375,Raw matrix PCA + k-means
+MCA-style one-hot SVD + k-means,contraceptive_vulnerability,0,1498,178,0.1131884287074116,0.07810607985777983,1.449162842553509,0.03508234884963177,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,contraceptive_vulnerability,1,1347,48,0.030484191817278582,0.07810607985777983,0.3902921753695231,-0.04762188804050124,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,contraceptive_vulnerability,2,2048,179,0.09125964621981476,0.07810607985777983,1.168406433737114,0.013153566362034935,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,fertility_service_or_loss_help,0,1498,100,0.06411842074449604,0.11100773395980593,0.5776031854475316,-0.04688931321530988,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,fertility_service_or_loss_help,1,1347,19,0.01018670965217401,0.11100773395980593,0.09176576522012826,-0.10082102430763192,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,fertility_service_or_loss_help,2,2048,436,0.21276115560577794,0.11100773395980593,1.9166336255707666,0.10175342164597201,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,unintended_mistimed_pregnancy_history,0,1498,709,0.47477465027598664,0.3420909272258648,1.387860982242647,0.13268372305012183,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,unintended_mistimed_pregnancy_history,1,1347,14,0.009235425009663715,0.3420909272258648,0.02699698903024705,-0.3328555022162011,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,unintended_mistimed_pregnancy_history,2,2048,1015,0.5026661266742746,0.3420909272258648,1.4693933298686706,0.16057519944840976,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,adverse_pregnancy_history_proxy,0,1498,110,0.06716599921166486,0.05375458533071529,1.249493392953146,0.013411413880949567,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,adverse_pregnancy_history_proxy,1,1347,1,0.00016637365103873016,0.05375458533071529,0.003095059705421344,-0.05358821167967656,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,adverse_pregnancy_history_proxy,2,2048,163,0.08445576720178953,0.05375458533071529,1.5711360562487984,0.03070118187107424,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,impaired_fecundity_status,0,1498,350,0.24613950905271392,0.2813104299924621,0.8749746998691424,-0.03517092093974816,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,impaired_fecundity_status,1,1347,182,0.12978962289264637,0.2813104299924621,0.4613750826662352,-0.15152080709981572,MCA-style one-hot SVD + k-means
+MCA-style one-hot SVD + k-means,impaired_fecundity_status,2,2048,835,0.4127019839996173,0.2813104299924621,1.467069614200497,0.1313915540071552,MCA-style one-hot SVD + k-means
+Selected-variable Bernoulli LCA,contraceptive_vulnerability,0,1235,43,0.03058802834317009,0.07810607985777983,0.3916216048592706,-0.047518051514609735,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,contraceptive_vulnerability,1,2754,259,0.0954530145158025,0.07810607985777983,1.2220945499967353,0.017346934658022672,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,contraceptive_vulnerability,2,904,103,0.10317900058815241,0.07810607985777983,1.3210111271238658,0.02507292073037258,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,fertility_service_or_loss_help,0,1235,32,0.023593227068599704,0.11100773395980593,0.2125367866453559,-0.08741450689120622,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,fertility_service_or_loss_help,1,2754,463,0.17969872091267092,0.11100773395980593,1.6187946055879032,0.06869098695286499,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,fertility_service_or_loss_help,2,904,60,0.06430952177618794,0.11100773395980593,0.5793246964168584,-0.046698212183617985,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,unintended_mistimed_pregnancy_history,0,1235,94,0.0697118854203647,0.3420909272258648,0.20378174301693064,-0.2723790418055001,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,unintended_mistimed_pregnancy_history,1,2754,1317,0.49898201999216596,0.3420909272258648,1.4586239513528931,0.15689109276630114,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,unintended_mistimed_pregnancy_history,2,904,327,0.3408056192020558,0.3420909272258648,0.9962427883304827,-0.0012853080238089953,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,adverse_pregnancy_history_proxy,0,1235,13,0.00749836847032073,0.05375458533071529,0.1394926297763881,-0.04625621686039456,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,adverse_pregnancy_history_proxy,1,2754,226,0.08928753291956519,0.05375458533071529,1.6610217039205106,0.0355329475888499,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,adverse_pregnancy_history_proxy,2,904,35,0.031102011774644545,0.05375458533071529,0.5785927206636436,-0.022652573556070744,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,impaired_fecundity_status,0,1235,182,0.15000903488324507,0.2813104299924621,0.5332508819074525,-0.131301395109217,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,impaired_fecundity_status,1,2754,1034,0.40011627845796877,0.2813104299924621,1.4223300517819057,0.11880584846550668,Selected-variable Bernoulli LCA
+Selected-variable Bernoulli LCA,impaired_fecundity_status,2,904,151,0.17172530033122663,0.2813104299924621,0.6104476834926744,-0.10958512966123546,Selected-variable Bernoulli LCA

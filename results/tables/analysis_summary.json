@@ -1,0 +1,13 @@
+{
+  "train_cycles": [
+    "2011_2013",
+    "2013_2015",
+    "2015_2017"
+  ],
+  "development_cycle": "2017_2019",
+  "test_cycle": "2022_2023",
+  "n_features_used": 48,
+  "selected_k": 3,
+  "embedding_dim": 48,
+  "pca_dim": 20
+}

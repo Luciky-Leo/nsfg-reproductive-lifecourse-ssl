@@ -1,0 +1,18 @@
+{
+  "seed": 20260602,
+  "max_features": 48,
+  "mask_rate": 0.15,
+  "d_model": 32,
+  "n_heads": 4,
+  "n_layers": 1,
+  "dropout": 0.1,
+  "embedding_dim": 48,
+  "batch_size": 1024,
+  "epochs": 30,
+  "lr": 0.001,
+  "pca_dim": 20,
+  "min_cluster_prop": 0.05,
+  "k_min": 2,
+  "k_max": 8,
+  "cluster_bootstrap_repeats": 60
+}

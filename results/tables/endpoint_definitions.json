@@ -1,0 +1,32 @@
+{
+  "contraceptive_vulnerability": {
+    "label": "Current contraceptive nonuse despite intercourse in the 3 months before interview",
+    "positive_definition": "CONSTAT1 code 42; denominator is the NSFG analytic female respondent population, interpreted as a current vulnerability proxy rather than an incident pregnancy outcome",
+    "direct_feature_regex": "constat|currmeth|meth",
+    "interpretation": "A current contraceptive vulnerability proxy, not a pregnancy outcome."
+  },
+  "fertility_service_or_loss_help": {
+    "label": "Ever received medical help to become pregnant or to prevent miscarriage",
+    "positive_definition": "HLPPRG code 1 or HLPMC code 1, indicating ever receiving medical help to become pregnant or to prevent miscarriage",
+    "direct_feature_regex": "hlpprg|hlpmc|infert|fecund|infever|anyprghp|anymschp|ovul|insem|invitro|tubes|advice|endomet|fibroid",
+    "interpretation": "A fertility-care and pregnancy-loss-care utilization endpoint."
+  },
+  "unintended_mistimed_pregnancy_history": {
+    "label": "Any pregnancy recorded as too soon, mistimed, or unwanted",
+    "positive_definition": "Among respondents with pregnancy records, any NEWWANTR code 3/4/6, WANTRESP code 3/5, WANTPART code 3/5, TIMINGOK code 3, or WANTBOLD code 5",
+    "direct_feature_regex": "preg_newwantr|preg_wantresp|preg_wantpart|preg_timingok|preg_wantbold",
+    "interpretation": "A lifetime pregnancy-intention history proxy among respondents with pregnancy records."
+  },
+  "adverse_pregnancy_history_proxy": {
+    "label": "Any low-birthweight live birth or stillbirth history",
+    "positive_definition": "Among respondents with pregnancy records, any public-use low-birthweight live birth indicator (LBW1 code 1) or stillbirth outcome (OUTCOME code 3)",
+    "direct_feature_regex": "preg_lbw|preg_outcome|birthwgt|gest",
+    "interpretation": "A public-use adverse pregnancy-history proxy, not a clinical diagnosis."
+  },
+  "impaired_fecundity_status": {
+    "label": "Fecundity limitation or infertility status",
+    "positive_definition": "FECUND code 2-5 or INFERT code 1-2, using public-use NSFG fecundity or infertility recodes and excluding FECUND code 1 contraceptive sterilization",
+    "direct_feature_regex": "fecund|infert|hlpprg|hlpmc|infever|anyprghp|anymschp",
+    "interpretation": "A broad public-use fecundity-limitation or infertility proxy that excludes contraceptive sterilization and is not a clinical infertility diagnosis."
+  }
+}

@@ -1,0 +1,2 @@
+analysis,n_primary_15_44_matched,adjusted_rand_index_vs_primary_assignment,exact_label_agreement_after_alignment,phenotype_label_map_reassigned_to_primary,note
+full_2022_embedding_reassignment,4893,0.9978922187286384,0.9989781320253424,0->2;1->1;2->0,"Model weights were loaded from the primary endpoint-excluded encoder; scaler, PCA, and development centroids were reconstructed from primary train/development data. Full-age labels were aligned to primary 15-44 phenotype labels by majority overlap before enrichment summaries."
