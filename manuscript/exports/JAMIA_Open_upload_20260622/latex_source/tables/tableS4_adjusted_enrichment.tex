@@ -1,0 +1,28 @@
+\begin{table}[H]
+\centering
+\caption{Covariate-adjusted phenotype endpoint enrichment in 2022--2023. Models are survey-weighted one-vs-rest logistic enrichment models adjusted for age, race/ethnicity, education, poverty, insurance, and parity. Confidence intervals are stratified cluster percentile bootstrap intervals using public-use \texttt{VEST}/\texttt{VECL}. These models are descriptive robustness checks and are not causal models.}
+\label{tab:adjusted_enrichment}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.36\textwidth}crrc@{}}
+\toprule
+Endpoint & Phenotype & Adjusted OR & 95\% CI & Bootstrap n \\
+\midrule
+Adverse pregnancy-history proxy & P0 & 0.11 & 0.01--0.29 & 300 \\
+Adverse pregnancy-history proxy & P1 & 1.65 & 1.04--2.85 & 300 \\
+Adverse pregnancy-history proxy & P2 & 2.05 & 1.20--3.57 & 300 \\
+Contraceptive vulnerability & P0 & 0.52 & 0.38--0.70 & 300 \\
+Contraceptive vulnerability & P1 & 1.84 & 1.39--2.41 & 300 \\
+Contraceptive vulnerability & P2 & 0.69 & 0.40--1.03 & 300 \\
+Fertility or loss help & P0 & 0.25 & 0.17--0.33 & 300 \\
+Fertility or loss help & P1 & 2.50 & 1.92--3.56 & 300 \\
+Fertility or loss help & P2 & 1.23 & 0.78--1.86 & 300 \\
+Fecundity limitation/infertility & P0 & 0.74 & 0.60--0.89 & 300 \\
+Fecundity limitation/infertility & P1 & 1.25 & 1.05--1.52 & 300 \\
+Fecundity limitation/infertility & P2 & 0.99 & 0.67--1.33 & 300 \\
+Mistimed/unwanted pregnancy history & P0 & 0.02 & 0.01--0.03 & 300 \\
+Mistimed/unwanted pregnancy history & P1 & 9.58 & 7.69--12.81 & 300 \\
+Mistimed/unwanted pregnancy history & P2 & 2.25 & 1.56--3.47 & 300 \\
+\bottomrule
+\end{tabular*}
+\end{table}

@@ -1,0 +1,36 @@
+\begin{table}[H]
+\centering
+\caption{Reviewer-requested supervised comparison of simple reproductive-exposure variables, raw primary encoder inputs, SSL embeddings, and combined feature sets. Models were L2-regularized logistic models trained on 2011--2019 and evaluated once in 2022--2023. The upper matrix reports AUPRC, the lower matrix reports AUROC. These unweighted discrimination summaries test representation utility and are not clinical prediction models. Full AUPRC-enrichment and delta values are provided in the source-data tables.}
+\label{tab:raw_feature_supervised}
+\tiny
+\setlength{\tabcolsep}{1.5pt}
+\textit{AUPRC matrix.}\\[-2pt]
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.10\textwidth}>{\raggedright\arraybackslash}p{0.15\textwidth}rrrcccccc@{}}
+\toprule
+Analysis & Endpoint & Train ev. & Test ev. & Base, \% & Age/parity & Raw 48 & SSL & Raw+SSL & Pheno. & SSL+ph. \\
+\midrule
+Ever-pregnant & Mistimed/unwtd. & 10,447 & 1,738 & 68.8 & 0.766 & 0.834 & 0.846 & 0.870 & 0.699 & 0.845 \\
+Ever-pregnant & Adverse proxy & 2,202 & 274 & 10.9 & 0.158 & 0.173 & 0.190 & 0.183 & 0.127 & 0.192 \\
+Full cohort & Contraceptive vuln. & 1,707 & 405 & 8.3 & 0.094 & 0.124 & 0.472 & 0.490 & 0.096 & 0.457 \\
+Full cohort & Fertility/loss help & 2,194 & 555 & 11.3 & 0.207 & 0.234 & 0.276 & 0.284 & 0.165 & 0.277 \\
+Full cohort & Mistimed/unwtd. & 10,447 & 1,738 & 35.5 & 0.766 & 0.790 & 0.831 & 0.862 & 0.681 & 0.833 \\
+Full cohort & Adverse proxy & 2,202 & 274 & 5.6 & 0.167 & 0.186 & 0.190 & 0.184 & 0.123 & 0.191 \\
+Full cohort & Fecundity limit./infert. & 5,361 & 1,367 & 27.9 & 0.429 & 0.455 & 0.529 & 0.536 & 0.338 & 0.527 \\
+\bottomrule
+\end{tabular*}
+\vspace{0.45em}
+\textit{AUROC matrix.}\\[-2pt]
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.14\textwidth}>{\raggedright\arraybackslash}p{0.18\textwidth}cccccc@{}}
+\toprule
+Analysis & Endpoint & Age/parity & Raw 48 & SSL & Raw+SSL & Pheno. & SSL+ph. \\
+\midrule
+Ever-pregnant & Mistimed/unwtd. & 0.60 & 0.71 & 0.72 & 0.77 & 0.52 & 0.72 \\
+Ever-pregnant & Adverse proxy & 0.59 & 0.64 & 0.67 & 0.67 & 0.55 & 0.67 \\
+Full cohort & Contraceptive vuln. & 0.55 & 0.65 & 0.90 & 0.91 & 0.57 & 0.90 \\
+Full cohort & Fertility/loss help & 0.73 & 0.75 & 0.78 & 0.79 & 0.66 & 0.78 \\
+Full cohort & Mistimed/unwtd. & 0.90 & 0.91 & 0.92 & 0.94 & 0.87 & 0.92 \\
+Full cohort & Adverse proxy & 0.81 & 0.82 & 0.84 & 0.84 & 0.77 & 0.84 \\
+Full cohort & Fecundity limit./infert. & 0.69 & 0.70 & 0.74 & 0.75 & 0.61 & 0.74 \\
+\bottomrule
+\end{tabular*}
+\end{table}

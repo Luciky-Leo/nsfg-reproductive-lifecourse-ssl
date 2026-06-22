@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code or processed source-data package, please cite the associated manuscript."
+title: "Self-supervised reproductive life-course phenotyping in the National Survey of Family Growth"
+version: "1.0.0"
+date-released: "2026-06-08"
+authors:
+  - family-names: Lu
+    given-names: Feifan
+    email: luff94@163.com
+  - family-names: Yan
+    given-names: Fengshang
+    email: 342082145@qq.com
+  - family-names: Yang
+    given-names: Qianqian
+    email: yangqianqian8733@163.com
+  - family-names: Yan
+    given-names: Jiuqiong
+    email: yanjiuqiong@163.com
+  - family-names: Guan
+    given-names: Rui
+    email: cngreen785@163.com
+license: MIT
+keywords:
+  - National Survey of Family Growth
+  - self-supervised learning
+  - reproductive health
+  - phenotype discovery
+  - public-use survey

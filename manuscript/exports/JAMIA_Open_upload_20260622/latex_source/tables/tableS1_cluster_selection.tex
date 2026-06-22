@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\caption{Development-cycle cluster selection metrics across k=2--8.}
+\label{tab:cluster_selection}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}rrrrrrr@{}}
+\toprule
+k & Silhouette & DBI & Min. cluster, \% & Boot. ARI & Boot. n & Selected \\
+\midrule
+2 & 0.587 & 0.617 & 43.3 & 0.999 & 60 & False \\
+3 & 0.606 & 0.701 & 4.6 & 0.914 & 60 & True \\
+4 & 0.518 & 0.720 & 4.7 & 0.738 & 60 & False \\
+5 & 0.385 & 0.969 & 4.0 & 0.797 & 60 & False \\
+6 & 0.385 & 0.953 & 1.6 & 0.780 & 60 & False \\
+7 & 0.366 & 1.040 & 3.2 & 0.750 & 60 & False \\
+8 & 0.366 & 1.029 & 1.5 & 0.715 & 60 & False \\
+\bottomrule
+\end{tabular*}
+\end{table}

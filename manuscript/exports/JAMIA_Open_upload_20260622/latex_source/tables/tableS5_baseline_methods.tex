@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\caption{Baseline phenotyping method comparison in the 2022--2023 temporal-validation cycle. Mean maximum prevalence ratio is averaged across prespecified endpoints. Minimum cluster proportion and bootstrap ARI are development/test stability summaries; a high prevalence ratio from a very small cluster should not be interpreted as a stronger method.}
+\label{tab:baseline_methods}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}>{\raggedright\arraybackslash}p{0.32\textwidth}rrrr@{}}
+\toprule
+Method & Mean max PR & Boot. ARI & Min. cluster, \% & Endpoints \\
+\midrule
+MCA-style one-hot SVD + k-means & 1.57 & 0.774 & 27.5 & 5 \\
+Raw matrix PCA + k-means & 2.25 & 0.735 & 0.1 & 5 \\
+SSL embedding + k-means & 2.16 & 0.953 & 4.9 & 5 \\
+Selected-variable Bernoulli LCA & 1.50 & 0.904 & 18.5 & 5 \\
+\bottomrule
+\end{tabular*}
+\end{table}
