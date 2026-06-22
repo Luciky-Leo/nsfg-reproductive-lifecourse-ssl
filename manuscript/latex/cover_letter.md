@@ -8,7 +8,7 @@ The informatics contribution is a split-aware workflow for survey representation
 
 We believe the manuscript fits JAMIA Open because it develops and transparently evaluates a reusable informatics workflow for public-use health survey data, with emphasis on reproducibility, leakage control, interpretable phenotyping, and cautious use of machine-learning outputs. The study may be useful for researchers building representation-learning workflows for survey, registry, and other structured population-health datasets where data are heterogeneous and endpoints can be indirectly encoded by upstream variables.
 
-The manuscript is accompanied by source-data tables, figure assets, model metadata, and analysis scripts. Raw individual-level NSFG public-use records are not redistributed; scripts point to CDC/NCHS public-use data portals. The project repository is available at https://github.com/Luciky-Leo/nsfg-reproductive-lifecourse-ssl and the archived reproducibility package is available at https://doi.org/10.5281/zenodo.20692052.
+The manuscript is accompanied by source-data tables, figure assets, model metadata, and analysis scripts. Raw individual-level NSFG public-use records are not redistributed; scripts point to CDC/NCHS public-use data portals. The project repository is available at https://github.com/Luciky-Leo/nsfg-reproductive-lifecourse-ssl and the archived reproducibility package is available at https://doi.org/10.5281/zenodo.20793239.
 
 All authors have approved the submitted version. The authors declare no competing interests, and no external funding was received for this study.
 

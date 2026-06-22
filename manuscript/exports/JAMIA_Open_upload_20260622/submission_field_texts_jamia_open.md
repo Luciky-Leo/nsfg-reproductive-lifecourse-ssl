@@ -24,11 +24,11 @@ Large reproductive-health surveys contain information about contraception, pregn
 
 ## Data Availability
 
-The raw data analyzed in this study are publicly available from CDC/NCHS NSFG public-use data portals, including the 2022-2023 public-use files and 2011-2019 public-use releases. Raw individual-level public-use records are not redistributed. Processed source-data tables used for figures and manuscript tables are included in the source_data directory and archived with the reproducibility package at Zenodo: https://doi.org/10.5281/zenodo.20692052. Public-use data access URLs and parsing notes are documented in the project README and processing scripts.
+The raw data analyzed in this study are publicly available from CDC/NCHS NSFG public-use data portals, including the 2022-2023 public-use files and 2011-2019 public-use releases. Raw individual-level public-use records are not redistributed. Processed source-data tables used for figures and manuscript tables are included in the source_data directory and archived with the reproducibility package at Zenodo: https://doi.org/10.5281/zenodo.20793239. Public-use data access URLs and parsing notes are documented in the project README and processing scripts.
 
 ## Code Availability
 
-Analysis scripts, split definitions, source-data tables, model metadata, and figure assets are available at GitHub (https://github.com/Luciky-Leo/nsfg-reproductive-lifecourse-ssl) and Zenodo (https://doi.org/10.5281/zenodo.20692052). Raw NSFG individual-level public-use records are not redistributed; the scripts point to CDC/NCHS public-use data portals and document the processing workflow. Project code is released under the MIT License, and citation metadata are provided in CITATION.cff.
+Analysis scripts, split definitions, source-data tables, model metadata, and figure assets are available at GitHub (https://github.com/Luciky-Leo/nsfg-reproductive-lifecourse-ssl) and Zenodo (https://doi.org/10.5281/zenodo.20793239). Raw NSFG individual-level public-use records are not redistributed; the scripts point to CDC/NCHS public-use data portals and document the processing workflow. Project code is released under the MIT License, and citation metadata are provided in CITATION.cff.
 
 ## Ethics Approval And Consent To Participate
 

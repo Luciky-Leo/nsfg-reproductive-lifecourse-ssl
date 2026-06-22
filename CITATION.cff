@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this code or processed source-data package, please cite the associated manuscript."
 title: "Self-supervised reproductive life-course phenotyping in the National Survey of Family Growth"
-version: "1.0.1"
-date-released: "2026-06-15"
+version: "1.0.2"
+date-released: "2026-06-22"
 authors:
   - family-names: Lu
     given-names: Feifan
@@ -26,5 +26,5 @@ keywords:
   - reproductive health
   - phenotype discovery
   - public-use survey
-doi: 10.5281/zenodo.20692052
+doi: 10.5281/zenodo.20793239
 repository-code: "https://github.com/Luciky-Leo/nsfg-reproductive-lifecourse-ssl"
